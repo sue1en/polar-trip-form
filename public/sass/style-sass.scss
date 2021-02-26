@@ -1,0 +1,418 @@
+*{
+    margin:0;
+    padding:0;
+    outline:none;
+    border:0;
+    background:none;
+    
+}
+
+$color-theme:#005082;
+$secundary-color:#01d0cd;
+$third-color:#001838;
+$fourth-color:#c6e8f9;
+
+body{
+    max-width: 100vw !important;
+    background: #ffffff;
+    font-family: 'Segoe UI', Verdana;
+
+    /* -------> HEADER<------- */
+    header{
+        border-top: 3px solid $third-color;
+        background: $color-theme;
+        height: 140px;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        
+        .mainLogo{
+            a{
+                margin:10px 10px 10px 40px;
+                display:flex;
+                align-items: center;
+                text-decoration: none;
+                img{
+                    height: 100px;
+                    margin:0 10px;
+                }
+                h1{
+                    color:#ffffff;
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    font-weight:bolder;
+                    margin:10px
+                }
+            }
+        }
+    
+        .mainMenu {
+            ul{
+                display: flex;
+                // justify-content: flex-end;
+                margin:0 30px;
+                li{ 
+                    list-style: none;
+                    font-weight:bolder;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    padding:0 15px;
+                    a{ 
+                        color:#ffffff;
+                        text-decoration: none;
+                    }
+                    & a:hover{ 
+                        color: $secundary-color;
+                        border-bottom: 2px solid $secundary-color;
+                    }
+                }
+            }
+        }
+    }
+    
+    /* -------> MAIN - INÍCIO <------- */
+    main{
+        max-width: 100vw;
+        #introBox{
+            background-image: url(../images/PolarTrip00.jpg);
+            background-repeat: no-repeat;
+            height: 310px;
+            display: flex;
+            justify-content:flex-end;
+    
+            #introTextBox{
+                background:#001838b6;
+                border: 2px solid #ffffff;
+                border-radius: 15px;
+                padding: 15px;
+                text-indent:10pt;
+                color: #ffffff;
+                max-width: 380px;
+                margin: 10px 20px;
+                h2{
+                    padding:0 0 5px;
+                    font-size: 20px;
+                }
+            }
+        }
+    
+        #midiaBox{
+            display:flex;
+            justify-content:space-between;
+            background: $third-color;
+            #midiaBoxText{
+                background:#fefefe;
+                padding:30px;
+                margin:7px 0;
+                text-indent:10pt;
+                width: 25%;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                h2{
+                    padding-bottom:10px;
+                }
+            }
+            #midiaBoxPhoto{
+                background:$third-color;
+                display:flex;
+                justify-content:space-evenly;
+                align-content:center;
+                flex-wrap: wrap;
+                // border-bottom-left-radius: 30px;
+                width: 70%;
+                img{
+                    height: 170px;
+                    margin:10px;
+                    border-radius: 20px;
+                }
+            }
+        }
+    
+        #locationMap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            /* border: 1px solid black; */
+            #locationBoxText{
+                text-transform: uppercase;
+                padding: 10px; 
+            }
+            #locationMapsImages{
+                #mapaMundi{
+                    width: 100%;
+                    /* max-height:450px; */
+                    border-radius: 600px;
+                }
+                #mapaGlobo{
+                }
+            }
+        }
+        
+        #subscribeBox{
+            height: 40px;
+            margin: 20px;
+            text-align: center;
+            a{
+                background:$fourth-color;
+                color:$third-color;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 20px;
+                padding:10px 180px;
+            }
+            & a:hover{
+                background:$secundary-color;
+                transform: scale(1.06);
+                transition:0.5s;
+            }
+        }   
+    }
+
+        #sobreMainBox{
+            // background: $fourth-color;
+            display: flex;
+            padding: 50px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
+            #sobreText{
+                max-width: 500px;
+                padding: 20px;
+                h2{
+                    color: $color-theme;
+                }
+                p{
+                    text-indent:10pt;
+                    color: $third-color;
+                }
+
+            }
+            img{
+                width: 600px;
+                padding:20px;
+            }
+        }
+        #membersMainBox{
+            // background:#ebebeb;
+            padding: 10px 50px 50px 50px;
+            display: block;
+            color: $third-color;
+            h2{
+                color: $color-theme;
+                padding:0 20px;
+                margin:10px;
+            }
+            #membersBox{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                .memberSingleBox{
+                    max-width: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding:20px;
+                    margin:10px;
+                    border-radius: 10px;
+                    background: $fourth-color;
+                    box-shadow:2px 2px 4px #bdbdbd;
+                    
+                    img{
+                        width: 120px;
+                    }
+                    .membersInfo{
+                        padding: 10px;
+                        text-indent:10pt;
+                        h2{
+                            color: $color-theme;
+                            padding:0;
+                            margin:0;
+                        }
+                    }
+                }
+            }
+        }
+    /* -------> FOOTER <------- */
+    footer{
+        max-width: 100vw;
+        border-bottom: 3px solid $third-color;
+        background: $color-theme;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        height: 120px;
+    
+        .botton-logo{
+            display:flex;
+            flex-direction:column;
+            align-items:flex-start;
+            margin: 50px;
+            img{
+                height: 50px;
+                margin:0 0 5px 0;
+            }
+            p{
+                color:#ffffff;
+                font-size: 10px;
+            }
+        }
+        .social-medias{
+            margin:0 25px;
+            ul{
+                li{ 
+                    list-style: none;
+                    font-size: 15px;
+                    font-weight:bolder;
+                    padding:2px 15px;
+                    a{ 
+                        color:#ffffff;
+                        text-decoration: none;
+                    }
+                    & a:hover{ 
+                        color: $fourth-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ----------> RESPONSIVO - INÍCIO <---------- */
+@media screen and (max-width:550px){
+    body{
+        width:auto;
+        /* --->HEADER<--- */
+        header{
+            width: 100vw;
+            height: 150px;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .mainLogo{
+                align-items: center;
+                a{
+                    margin:0;
+                    img{
+                        height: 80px;
+                        margin:0 10px;
+                    }
+                    h1{
+                        font-size: 30px;
+                    }
+                }
+            } 
+            .mainMenu{
+                width: 100vw;
+                ul{ 
+                    flex-wrap: nowrap;
+                    justify-content: space-around;
+                    li{ 
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        /* ---> MAIN - INÍCIO <---*/
+        main{
+            max-width: 100vw;
+            // #introBox{
+            //     #introTextBox{
+            //         h2{
+            //         }
+            //     }
+            // }
+            #midiaBox{
+                background: none;
+                width: 100vw;
+                flex-direction: column;
+                align-items: center;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                #midiaBoxText{
+                    width: 90%;
+                    padding:10px;
+                    margin:7px 0;
+                    h2{
+                        padding-bottom:10px;
+                    }
+                }
+                #midiaBoxPhoto{
+                    width: 100%;
+                    img{
+                        height:auto;
+                        width: 80%;
+                    }
+                }
+            }
+            // #locationMap{
+            //     #locationBoxText{
+            //     }
+            //     #locationMapsImages{
+            //         #mapaMundi{
+            //         }
+            //         #mapaGlobo{
+            //         }
+            //     }
+            // }
+            #subscribeBox{
+                a{
+                    padding:10px 100px;
+                }
+            }   
+        }
+        #sobreMainBox{
+            padding: 20px;
+
+
+            #sobreText{
+                max-width: 500px;
+                padding: 20px;
+                p{
+                    text-indent:10pt;
+                }
+
+            }
+            img{
+                width: 200px;
+                padding:20px;
+            }
+        }
+        #membersMainBox{
+            padding: 20px;
+
+            #membersBox{
+                flex-wrap: wrap;
+            }
+
+
+        }
+
+
+        /* --->FOOTER - INÍCIO<--- */
+        footer{
+            width: 100vw;
+            .botton-logo{
+                img{
+                }
+                p{
+                }
+            }
+            .social-medias{
+                ul{
+                    li{ 
+                    font-size: 18px;
+
+                    }
+                } 
+            }
+        }   
+    }
+}

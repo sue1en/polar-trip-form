@@ -1,0 +1,127 @@
+/* ESTILO DO FORMULÁIO */
+/* MAIN */
+main{
+    background: #ffffff;
+    margin:30px;
+    display:flex;
+    justify-content: center;
+
+    $color-theme:#005082;
+    $secundary-color:#01d0cd;
+    $third-color:#001838;
+    $fourth-color:#c6e8f9;
+
+    form{
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
+        min-width: 350px;
+
+        .formSection{
+            background: #ebebeb;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            font-size: 14pt;
+            color: $third-color;
+            box-shadow:2px 2px 4px #bdbdbd;
+
+            .sectionTitle{
+                color: $color-theme;
+                font-weight: bolder;
+                font-size: 16pt;
+                padding-bottom: 7px;
+            }
+            .formItem{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 7px 0;
+                
+                .inputboxes{
+                    background: #ffffff;
+                    flex-grow: 1;
+                    margin-left: 14px;
+                    padding:7px;
+                    border-radius:5px;
+                    border: 1px solid #bdbdbd;
+                    
+                }
+            }
+            .formBoxradio{
+                display:flex;
+                align-items: center;
+                margin: 10px 0;
+                .boxRadioOptions{
+                    display: flex;
+                    .radioImput{
+                        align-items: center;
+                        input{
+                            margin:0 5px 0 15px;
+                        }
+                    }
+                }
+            }
+            .formItemClientMessage{
+                display:flex;
+                flex-direction: column;
+                margin:10px 0;
+                textarea{
+                    background: #ffffff;
+                    border: 1px solid #bdbdbd;
+                    border-radius:5px;
+                    padding:7px;
+                }
+            }
+        }
+        .formCheckbox{
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 10px;
+
+            label{
+                padding: 0 7px;
+            }
+
+        }
+    
+        /*BUTTON SEND*/
+        .formSendButton{
+            background:$fourth-color;
+            width: 300px;
+            height: 40px;
+            margin:5px 10px;
+            border-radius: 20px;
+            color:$third-color;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+                            
+            &.formSendButton:hover{
+                transition:0.5s;
+                background:$secundary-color;
+            }
+        }
+    }
+}
+
+/* ----------> RESPONSIVO - INÍCIO <---------- */
+@media screen and (max-width:550px){
+    main{
+        form{
+            .formSection{
+                .formBoxradio{
+                    flex-direction: column;
+                    align-items:flex-start;
+                    .boxRadioOptions{
+                        flex-direction: column;
+                        width: 50%;
+                        margin:0 30px;
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}

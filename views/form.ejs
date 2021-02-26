@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-sass.css">
+    <link rel="stylesheet" href="css/sass-form.css">
+    <title>Polar Trip</title>
+</head>
+<body>
+        <header>
+            <div class="mainLogo"><a href="/">
+                <img src="images/logo-polar-tour.png">
+                <h1>Polar Trip</h1></a>
+            </div>
+            <nav class="mainMenu">
+                <ul>
+                    <li><a href="/">home</a></li>
+                    <li><a href="/form">inscrição</a></li>
+                    <li><a href="/sobre">sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="/form" method="POST">
+              
+                <%- include ('./slice/form-slice.ejs') %>
+
+                    <div class="formCheckbox">
+                        <input type="checkbox" name="subscrip-news" checked>
+                        <label for="subscrip-news">Deseja receber nossas novidades</label>
+                    </div>
+                    <button type="submit"class="formSendButton">Enviar</button>
+            </form>
+        </main>
+        <footer>
+            <div class="botton-logo">
+                <img src="images/logo-polar-tour-botton.png">
+                <p>copyright - Polar Trip</p>
+                <p id="developer">developed by Suelen Batista</p>
+            </div>
+            <div class="social-medias">
+                <ul>
+                    <li><a href="#">Instagran</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+        </footer>
+</body>
+</html>

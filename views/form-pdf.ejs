@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-sass.css">
+    <title>Polar Trip</title>
+    <style>
+        main{
+            margin:0;
+            padding:5px;
+            line-height:0;
+            font-family: 'Segoe UI', Verdana;
+        }
+        .header{
+            background:#001838;
+            border-radius: 10px;
+            color: #01d0cd;
+            padding:15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+        }
+        .logoText{
+            padding: 5px;
+        }
+        .sectionBox{
+            background: #ebebeb;
+            margin-top: 5px;
+            padding:10px 10px;
+            border-radius: 10px;
+        }
+        .sectionTitle{
+            padding-left: 10px;
+        }
+        .sectionGroup{
+            background:#ffffff;
+            padding:10px;
+            border-radius: 10px;
+            border:1px solid #000000;
+        }
+        .tripInfo{
+            display: flex;
+            justify-content: left;
+        }
+        .tripInfo p{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <div class="headerText">
+                <h2>CONFIRMAÇÃO</h2>
+            </div>
+            <div class="logo">
+                <div class="logoText">
+                    <h3>POLAR TRIP</h3>
+                </div>
+                <!-- <div class="logoImage">
+                </div> -->
+            </div>
+        </div>
+        <div class="sectionBox">
+            <div class="sectionTitle">
+                <h3>Dados do Viajante</h3>
+            </div>
+            <div class="sectionGroup">
+                <div class="tripInfo">
+                    <p>Nome:  <%= nome %></p>
+                </div>
+                <div class="tripInfo">
+                    <p>Email:  <%= email %></p>
+                    <p>Telefone:  <%= telefone %></p>
+                </div>
+                <div class="tripInfo">
+                    <p>Nascimento:  <%= nascimento %></p>
+                    <p>Genero:  <%= genero %></p>
+                </div>
+                <div class="tripInfo">
+                    <p>Endereço:   <%= rua %></p>
+                    <p>Nº:  <%= numero %></p>
+                </div>
+                <div class="tripInfo">
+                    <p>Cidade:  <%= cidade %></p>
+                    <p>Estado:  <%= estado %></p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionBox">
+            <div class="sectionTitle">
+                <h3> Dados da viagem</h3>
+            </div>
+            <div class="sectionGroup">
+                <div class="tripInfo">
+                    <p>Estilo da Viagem:  <%= viagem %></p>
+                </div>
+                <div class="tripInfo">
+                    <p>Local do Embarque:  <%= cidade %>  -  <%= estado %></p>
+                    <p>Data do Embarque:  <%= data %></p>
+                </div>
+                <div class="tripInfo">
+                    <p>Número de Viajantes:  <%= viajantes %></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

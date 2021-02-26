@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* ESTILO DO FORMULÁIO */
+/* MAIN */
+main {
+  background: #ffffff;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 350px;
+  /*BUTTON SEND*/
+}
+main form .formSection {
+  background: #ebebeb;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 14pt;
+  color: #001838;
+  box-shadow: 2px 2px 4px #bdbdbd;
+}
+main form .formSection .sectionTitle {
+  color: #005082;
+  font-weight: bolder;
+  font-size: 16pt;
+  padding-bottom: 7px;
+}
+main form .formSection .formItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 7px 0;
+}
+main form .formSection .formItem .inputboxes {
+  background: #ffffff;
+  flex-grow: 1;
+  margin-left: 14px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+}
+main form .formSection .formBoxradio {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+main form .formSection .formBoxradio .boxRadioOptions {
+  display: flex;
+}
+main form .formSection .formBoxradio .boxRadioOptions .radioImput {
+  align-items: center;
+}
+main form .formSection .formBoxradio .boxRadioOptions .radioImput input {
+  margin: 0 5px 0 15px;
+}
+main form .formSection .formItemClientMessage {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+main form .formSection .formItemClientMessage textarea {
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 7px;
+}
+main form .formCheckbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+}
+main form .formCheckbox label {
+  padding: 0 7px;
+}
+main form .formSendButton {
+  background: #c6e8f9;
+  width: 300px;
+  height: 40px;
+  margin: 5px 10px;
+  border-radius: 20px;
+  color: #001838;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main form .formSendButton.formSendButton:hover {
+  transition: 0.5s;
+  background: #01d0cd;
+}
+
+/* ----------> RESPONSIVO - INÍCIO <---------- */
+@media screen and (max-width: 550px) {
+  main form .formSection .formBoxradio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main form .formSection .formBoxradio .boxRadioOptions {
+    flex-direction: column;
+    width: 50%;
+    margin: 0 30px;
+    align-items: flex-start;
+  }
+}
+
+/*# sourceMappingURL=sass-form.css.map */

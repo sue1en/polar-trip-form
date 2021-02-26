@@ -1,0 +1,110 @@
+/* ESTILO DO FORMULÁIO */
+/* MAIN */
+main{
+    background: #ffffff;
+    margin:30px;
+    display:flex;
+    justify-content: center;
+}
+/* FORMULÁRIO PRINCIPAL */
+main form{
+    width: 450px;
+}
+
+.formSection{
+    background: #ecf0f1;
+    border: 1px solid #061f50;
+    border-radius:15px;
+    padding:20px;
+    margin:10px;
+    color: #061f50;
+}
+.sectionTitle{
+    color:#061f50;
+    font-size: 20px;
+    font-weight: bold;
+    padding:0 0 10px 0;
+}
+.formItem{
+    margin:10px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.formItem input, select{
+    background: #ffffff;
+    padding:5px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border:1px solid #061f50;
+}
+
+.formBoxradio{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:15px 0 10px 0;
+}
+
+.adressInfo{
+    display:flex;
+    justify-content:space-between;
+}
+
+#streetInput{
+    margin-right: 10px;
+    width: 210px;
+}
+#cityInput{
+    margin-right: 10px;
+    width: 170px;
+}
+#streetNumberInput, #countryStateSelect{
+    width: 70px;
+}
+
+.formItemClientMessage{
+    display:flex;
+    flex-direction: column;
+    margin:0 0 10px 0;
+}
+.formItemClientMessage textarea{
+    background: #ffffff;
+    padding:4px 5px;
+    border-radius: 5px;
+    margin: 5px 0 0 0;
+    max-width: 375px;
+    min-width: 375px;
+    max-height: 300px;
+    border:1px solid #061f50;
+}
+.formCheckbox{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 10px 5px;
+}
+.formCheckbox input{
+    width: auto;
+    margin: 0 10px;
+}
+
+/*BUTTON SEND*/
+.formSendButton{
+    background:#c6e8f9;
+    width: 300px;
+    height: 40px;
+    margin:5px 10px;
+    border-radius: 20px;
+    color:#061f50;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.formSendButton:hover{
+    /* transform: scale(1.01); */
+    transition:0.5s;
+    background: #49b8c0;
+}
+

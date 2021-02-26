@@ -1,0 +1,83 @@
+<div class="formSection">
+    <p class="sectionTitle">Informações Pessoais</p>
+    <div class="formItem">
+    <label for="name">Nome:</label>
+        <input type="text" name="name" placeholder="Informe seu nome completo" required class="inputboxes">
+    </div>
+    <div class="formItem">
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="fulano@algo.com" required  class="inputboxes">
+    </div>
+    <div class="formItem">
+        <label for="telephone">Telefone:</label>
+        <input type="tel" name="telephone" placeholder="(DDD) 00000-0000" required class="inputboxes">
+    </div>
+    <div class="formItem">
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" name="nascimento" required class="inputboxes">
+    </div>
+    <div class="formBoxradio">
+        <label for="gender">Genero: </label>
+        <div class="boxRadioOptions">
+            <div class="radioImput"><input type="radio" name="gender" value="1">Masculino</div>
+            <div class="radioImput"><input type="radio" name="gender" value="2">Feminino</div>
+            <div class="radioImput"><input type="radio" name="gender" value="3" checked>Outro</div>
+        </div>
+    </div>
+</div>
+
+<div class="formSection">
+    <p class="sectionTitle">Endereço</p>
+    <div class="adressInfo">
+        <div class="formItem">
+            <label for="street">Rua:</label>
+            <input type="text" name="street"  id="streetInput" required class="inputboxes">
+        </div> 
+        <div class="formItem">
+            <label for="streetNumber">Nº:</label>
+            <input type="text" name="streetNumber" id="streetNumberInput" required class="inputboxes">
+        </div>
+    </div>
+    <div class="adressInfo">              
+        <div class="formItem"> 
+            <label for="city">Cidade:</label>
+            <input type="text" name="city" id="cityInput" required class="inputboxes">
+        </div>
+        <div class="formItem"> 
+            <label for="countryState">Estado:</label>
+            <select name="countryState"  id="countryStateSelect" required class="inputboxes">
+                <option></option>
+
+                <% countryState.map ((item) =>{ %>
+                    <option value= "<%= item.value %>""> 
+                        <%= item.label %>
+                    </option>
+                <% }) %>
+            </select>   
+        </div>
+    </div>
+</div>   
+<div class="formSection">
+    <p class="sectionTitle">Escolha a viagem</p>
+    <div class="formBoxradio">
+        <label for="viagemEstilo">Estilo da viagem: </label>
+        <div class="boxRadioOptions">
+            <div class="radioImput"><input type="radio" name="viagemEstilo" value="1" checked>Beginner</div>
+            <div class="radioImput"><input type="radio" name="viagemEstilo" value="2">Expert</div>
+            <div class="radioImput"><input type="radio" name="viagemEstilo" value="3">Extreme</div>
+        </div>
+    </div>
+    <div class="formItem">
+        <label for="departureDate">Data de ida:</label>
+        <input type="date" name="departureDate" required class="inputboxes">
+    </div>
+    <div class="formItem">
+        <label for="travellers">Período de permanência (dias):</label>
+        <input type="number" name="travellers" required class="inputboxes">
+    </div>
+    <div class="formItemClientMessage">
+        <label for="clientMessage">Observações:</label>
+    <textarea name="clientMessage" cols="15" rows="5"></textarea>
+    </div>
+</div>
+
