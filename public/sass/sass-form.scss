@@ -48,12 +48,13 @@ main{
                     
                 }
             }
-            .formBoxradio{
+            .formBoxRadio{
                 display:flex;
-                align-items: center;
+                align-items: flex-start;
+                justify-content: start;
                 margin: 10px 0;
                 .boxRadioOptions{
-                    display: flex;
+                    margin-left: 15px;
                     .radioImput{
                         align-items: center;
                         input{

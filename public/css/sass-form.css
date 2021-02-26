@@ -43,18 +43,19 @@ main form .formSection .formItem .inputboxes {
   border-radius: 5px;
   border: 1px solid #bdbdbd;
 }
-main form .formSection .formBoxradio {
+main form .formSection .formBoxRadio {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: start;
   margin: 10px 0;
 }
-main form .formSection .formBoxradio .boxRadioOptions {
-  display: flex;
+main form .formSection .formBoxRadio .boxRadioOptions {
+  margin-left: 15px;
 }
-main form .formSection .formBoxradio .boxRadioOptions .radioImput {
+main form .formSection .formBoxRadio .boxRadioOptions .radioImput {
   align-items: center;
 }
-main form .formSection .formBoxradio .boxRadioOptions .radioImput input {
+main form .formSection .formBoxRadio .boxRadioOptions .radioImput input {
   margin: 0 5px 0 15px;
 }
 main form .formSection .formItemClientMessage {
