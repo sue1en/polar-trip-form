@@ -25,19 +25,9 @@ const hendlerRaiz = (req, res, next) => {
     res.render('index');
 }
 
-
-
 app.get('/', hendlerRaiz);
 
 app.get('/form', formController.formGet);
-
-// app.get('/pdf', (req, res) => {
-
-//     const user = {nome:'Fulano', email:'fulano@fulano', telefone:'000000', nascimento:'000000', genero:'asdasd', rua:'1', numero:'0', cidade:'alguma', estado:'algum', viagem:'q', data:'00', viajantes:'00'}
-
-//     res.render('form-pdf', user );
-
-// });
 
 app.post('/form', formController.formPost);
 
