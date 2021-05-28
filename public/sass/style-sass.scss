@@ -4,7 +4,6 @@
     outline:none;
     border:0;
     background:none;
-    
 }
 
 $color-theme:#005082;
@@ -49,7 +48,7 @@ body{
         .mainMenu {
             ul{
                 display: flex;
-                // justify-content: flex-end;
+                justify-content: flex-end;
                 margin:0 30px;
                 li{ 
                     list-style: none;

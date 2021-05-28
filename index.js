@@ -36,7 +36,7 @@ app.get('/sobre', sobreController.sobreGet);
 // app.get('/'(req, res, next));
 
 app.listen(port, () => {
-    console.log('o servidor esta rodando');
+    console.log(`o servidor esta rodando em http://localhost:${port}`);
 });
 
 console.log('fim do index');
