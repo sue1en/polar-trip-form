@@ -40,6 +40,11 @@ Projeto de realizado no início do curso de desenvolvimento, onde o objetivo pri
   - Tela
      
      <img src="interface_Prints/PolarTrip-mobile-form-return-pdf.png" width="450" alt="tela sobre para mobile"/>
+
+#### desktop/laptop Demo:
+  - Demo:
+  
+    <img src="interface_Prints/PolarTrip-Site-Demo.gif" width="450" alt="Demo web page desktop/laptop"/>  
   
  #### Telas para mobile:
   
