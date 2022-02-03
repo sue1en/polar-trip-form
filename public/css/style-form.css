@@ -8,7 +8,7 @@ main{
 }
 /* FORMULÁRIO PRINCIPAL */
 main form{
-    width: 450px;
+    max-width: 450px;
 }
 
 .formSection{
@@ -74,8 +74,7 @@ main form{
     padding:4px 5px;
     border-radius: 5px;
     margin: 5px 0 0 0;
-    max-width: 375px;
-    min-width: 375px;
+    width: 375px;
     max-height: 300px;
     border:1px solid #061f50;
 }

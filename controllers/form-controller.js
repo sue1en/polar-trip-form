@@ -3,20 +3,11 @@ const fileSystem = require('fs');
 const html_to_pdf = require('html-pdf-node');
 const joi = require('joi')
 
-const genderModel = require('../models/gender-models');
 const stateModel = require('../models/state-models');
 const viagemModel = require('../models/viagem-models');
 
 const hendlerGetForm = (req, res, next) => {
     
-    const genderModelResult = genderModel.getAllGender();
-    const genderItemViewModel = genderModelResult.map ((item) => {     
-        return{
-            value: item.id,
-            label: item.descricao
-        }    
-    });
- 
     const stateModelResult = stateModel.getAllState();
     const stateItemViewModel = stateModelResult.map ((item) => {
         return {
@@ -34,10 +25,7 @@ const hendlerGetForm = (req, res, next) => {
         }
     });
 
-    console.log('cheguei aqui !!!');
-
     const getViewModel = {
-        gender: genderItemViewModel,
         countryState: stateItemViewModel,
         viagemEstilo: viagemItemViewModel,
     }
@@ -51,18 +39,15 @@ const hendlerPostForm = (req, res, next) => {
     console.log(req.body);
     
     const body = req.body;
-    
-    const genderResult = genderModel.getGenderById(body.gender);
+   
     const stateResult = stateModel.getStateById(body.countryState);
     const viagemResult = viagemModel.getViagemById(body.viagemEstilo);
-
 
     const viewModel = {
         nome: body.name,
         email: body.email,
         telefone: body.telephone,
         nascimento: body.nascimento,
-        genero: genderResult.descricao,
 
         rua: body.street,
         numero: body.streetNumber,
