@@ -23,29 +23,34 @@ Projeto de realizado no início do curso de desenvolvimento, onde o objetivo pri
 [Visitar página](https://polar-trip.herokuapp.com/)
 
 ## Telas do Projeto:
-  #### desktop/laptop:
+#### desktop/laptop:
   - Tela Principal :
   
-  <img src="#" width="250" alt="tela principal para desktop/laptop"/>
+    <img src="interface_Prints/PolarTrip-Web-main.png" width="450" alt="tela principal para desktop/laptop"/>
   
   - Tela do Form:
   
-  <img src="#" width="250" alt="tela cria post para desktop/laptop"/>
+     <img src="interface_Prints/PolarTrip-Web-main-form.png" width="450" alt="tela form para desktop/laptop"/>
   
    - Tela de Sobre:
   
-  <img src="#" width="250" alt="tela edita post para desktop/laptop"/>
+     <img src="interface_Prints/PolarTrip-Web-about.png" width="450" alt="tela sobre para desktop/laptop"/>
 
+ #### Retorno do formulário em PDF:
+  - Tela
+     
+     <img src="interface_Prints/PolarTrip-mobile-form-return-pdf.png" width="450" alt="tela sobre para mobile"/>
   
  #### Telas para mobile:
+  
   - Tela Principal para mobile:
   
-    <img src="#" heigth="500" alt="tela principal para mobile"/>
+    <img src="interface_Prints/PolarTrip-mobile-main.png" width="250" alt="tela principal para mobile"/>
     
   - Tela do Form para mobile:
   
-    <img src="#" heigth="500" alt="tela cria post para mobile"/>
+    <img src="interface_Prints/PolarTrip-mobile-form.png" width="250" alt="tela form para mobile"/>
     
   - Tela de Sobre para mobile:
   
-    <img src="desktop/laptop" heigth="500" alt="tela edita post para desktop"/>
+    <img src="interface_Prints/PolarTrip-mobile-about.png" width="250" alt="tela sobre para mobile"/>
